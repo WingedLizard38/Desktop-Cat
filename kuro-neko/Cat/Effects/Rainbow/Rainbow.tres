@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dji1u1k5np021"]
+
+[ext_resource type="Shader" uid="uid://dxb3l7w21ll53" path="res://Cat/Effects/Rainbow/rainbow.gdshader" id="1_3241k"]
+
+[resource]
+shader = ExtResource("1_3241k")
+shader_parameter/influence = 0.41999999061216
+shader_parameter/speed = 0.5000000074506
+shader_parameter/frequency = 0.10000000149012

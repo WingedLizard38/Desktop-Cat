@@ -1,0 +1,438 @@
+[gd_scene load_steps=28 format=3 uid="uid://dtcgogu5l0h27"]
+
+[ext_resource type="Script" uid="uid://b30rwt022fyb" path="res://Cat/main.gd" id="1_1bvp3"]
+[ext_resource type="SpriteFrames" uid="uid://bk6jcbxk0v8w0" path="res://Cat/char.tres" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://b40wkbg6focyx" path="res://popup_menu.gd" id="2_4c57u"]
+[ext_resource type="Texture2D" uid="uid://d2ft2lr8e7iyg" path="res://Cat/eyes/whites.png" id="2_272bh"]
+[ext_resource type="Texture2D" uid="uid://b1kxch3eknqqp" path="res://Cat/eyes/Eyes.png" id="3_5vw27"]
+[ext_resource type="Material" uid="uid://dji1u1k5np021" path="res://Cat/Effects/Rainbow/Rainbow.tres" id="3_efxa6"]
+[ext_resource type="Script" uid="uid://6ivj8dv0r5ha" path="res://Cat/eyes/blink.gd" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://blcaxnriyjvhd" path="res://Cat/Movement/Ear2.png" id="6_cegan"]
+[ext_resource type="Texture2D" uid="uid://c87xhfmobkmao" path="res://Cat/smoke/smoke.png" id="6_w48qg"]
+[ext_resource type="Texture2D" uid="uid://dlseitee0jkic" path="res://Cat/Movement/Ear.png" id="7_82xsv"]
+[ext_resource type="Script" uid="uid://c226ajh1bq123" path="res://Cat/eyes/eye_movement.gd" id="8_5vw27"]
+[ext_resource type="Texture2D" uid="uid://m70wq34pwmhf" path="res://Cat/Movement/Tail.png" id="8_getpj"]
+[ext_resource type="Material" uid="uid://nhc5c14qs5k" path="res://Cat/Effects/Cup/hue.tres" id="12_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://bxt7m4403expq" path="res://Cat/cup.png" id="12_w48qg"]
+[ext_resource type="Texture2D" uid="uid://ceslsyqrtsi08" path="res://Cat/hand.png" id="13_vivmo"]
+[ext_resource type="Script" uid="uid://d02s05ky7h2oh" path="res://Cat/Effects/Cup/cup_hue.gd" id="14_2cqfq"]
+[ext_resource type="Shader" uid="uid://dhh0e5kxqbkfv" path="res://Cat/Effects/Outline/outline.gdshader" id="17_yaehf"]
+
+[sub_resource type="Animation" id="Animation_82xsv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ear:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ear:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Tail:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(227, 287)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Tail:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Tail:skew")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ear2:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ear2:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_cegan"]
+resource_name = "ear"
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ear:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.13407154, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.28099802, 0.28099802, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ear:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.13407154, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(46.771, -51.35), Vector2(43.885, -51.42), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ryguw"]
+resource_name = "ear2"
+step = 0.012
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ear2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.12048193, 0.13653745, 0.19280845),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1.045, 0), Vector2(0.87, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ear2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.12051928, 0.1365748, 0.19280845),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.19722220547535943, 0.19722220547535943, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_getpj"]
+resource_name = "tail"
+step = 0.012
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tail:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(227, 287)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Tail:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.09638554, 0.19469488),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.6684611035138284, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Tail:skew")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_getpj"]
+_data = {
+&"RESET": SubResource("Animation_82xsv"),
+&"ear": SubResource("Animation_cegan"),
+&"ear2": SubResource("Animation_ryguw"),
+&"tail": SubResource("Animation_getpj")
+}
+
+[sub_resource type="Curve" id="Curve_vivmo"]
+_data = [Vector2(0, 0.8521199), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_2cqfq"]
+colors = PackedColorArray(1, 1, 1, 0.30588236, 1, 1, 1, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_074og"]
+shader = ExtResource("17_yaehf")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 12.68400060249
+shader_parameter/add_margins = true
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_2cqfq"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tvwca"]
+size = Vector2(40, 40)
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("cup", "popup_menu")]
+texture_filter = 1
+script = ExtResource("1_1bvp3")
+char_size = 5
+outline_weight = 7
+cup = NodePath("SubViewport/Char/Cup")
+rainbow_shader = ExtResource("3_efxa6")
+popup_menu = NodePath("PopupMenu")
+
+[node name="PopupMenu" type="Window" parent="." node_paths=PackedStringArray("main", "image_scale", "outline_weight", "rainbow", "cup")]
+oversampling_override = 1.0
+title = "Settings"
+position = Vector2i(0, 36)
+size = Vector2i(400, 200)
+visible = false
+always_on_top = true
+minimize_disabled = true
+maximize_disabled = true
+script = ExtResource("2_4c57u")
+main = NodePath("..")
+image_scale = NodePath("MarginContainer/VBoxContainer/HBoxContainer/Spinbox")
+outline_weight = NodePath("MarginContainer/VBoxContainer/HBoxContainer2/Spinbox")
+rainbow = NodePath("MarginContainer/VBoxContainer/HBoxContainer4/CheckButton")
+cup = NodePath("../SubViewport/Char/Cup")
+
+[node name="MarginContainer" type="MarginContainer" parent="PopupMenu"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 11
+theme_override_constants/margin_top = 11
+theme_override_constants/margin_right = 11
+theme_override_constants/margin_bottom = 11
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupMenu/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PopupMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Image Scale" type="Label" parent="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+tooltip_text = "Character will take up 1/[Image Scale] of the shortest side of the screen."
+mouse_filter = 1
+text = "Image Scale"
+
+[node name="Spinbox" type="SpinBox" parent="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+min_value = 1.0
+value = 1.0
+rounded = true
+allow_greater = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PopupMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Outline" type="Label" parent="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+tooltip_text = "Character will take up 1/[Image Scale] of the shortest side of the screen."
+mouse_filter = 1
+text = "Outline Weight"
+
+[node name="Spinbox" type="SpinBox" parent="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+max_value = 15.0
+rounded = true
+allow_greater = true
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="PopupMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Rainbow" type="Label" parent="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+tooltip_text = "Character will take up 1/[Image Scale] of the shortest side of the screen."
+mouse_filter = 1
+text = "Rainbow"
+
+[node name="CheckButton" type="CheckButton" parent="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="PopupMenu/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Hue" type="Label" parent="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+tooltip_text = "Character will take up 1/[Image Scale] of the shortest side of the screen."
+mouse_filter = 1
+text = "Cup Hue"
+
+[node name="HSlider" type="HSlider" parent="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.01
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+canvas_item_default_texture_filter = 3
+
+[node name="Char" type="AnimatedSprite2D" parent="SubViewport" node_paths=PackedStringArray("anims")]
+texture_filter = 1
+material = ExtResource("3_efxa6")
+sprite_frames = ExtResource("2_1bvp3")
+animation = &"start"
+autoplay = "start"
+centered = false
+script = ExtResource("3_lquwl")
+anims = NodePath("AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SubViewport/Char"]
+libraries = {
+&"": SubResource("AnimationLibrary_getpj")
+}
+playback_auto_capture = false
+
+[node name="Ear2" type="Sprite2D" parent="SubViewport/Char"]
+z_index = -5
+material = ExtResource("3_efxa6")
+texture = ExtResource("6_cegan")
+centered = false
+
+[node name="Ear" type="Sprite2D" parent="SubViewport/Char"]
+z_index = -5
+material = ExtResource("3_efxa6")
+texture = ExtResource("7_82xsv")
+centered = false
+
+[node name="Tail" type="Sprite2D" parent="SubViewport/Char"]
+z_index = -5
+material = ExtResource("3_efxa6")
+position = Vector2(227, 287)
+texture = ExtResource("8_getpj")
+offset = Vector2(-47.265, -104.745)
+
+[node name="Smoke Particles" type="CPUParticles2D" parent="SubViewport/Char"]
+position = Vector2(140, 224)
+scale = Vector2(0.215, 0.215)
+amount = 16
+texture = ExtResource("6_w48qg")
+lifetime = 6.21
+explosiveness = 0.06
+randomness = 0.47
+lifetime_randomness = 0.3
+local_coords = true
+emission_shape = 1
+emission_sphere_radius = 128.0
+direction = Vector2(0, -1)
+spread = 13.05
+gravity = Vector2(0, 0)
+initial_velocity_min = 85.18
+initial_velocity_max = 159.63
+angular_velocity_min = -14.47
+angular_velocity_max = 14.48
+linear_accel_min = -76.38
+scale_amount_curve = SubResource("Curve_vivmo")
+color_ramp = SubResource("Gradient_2cqfq")
+
+[node name="Whites" type="Sprite2D" parent="SubViewport/Char"]
+z_index = -1
+texture = ExtResource("2_272bh")
+centered = false
+
+[node name="Eyes" type="Sprite2D" parent="SubViewport/Char" node_paths=PackedStringArray("main")]
+z_index = -1
+material = ExtResource("3_efxa6")
+texture = ExtResource("3_5vw27")
+centered = false
+script = ExtResource("8_5vw27")
+main = NodePath("../../..")
+positions = Array[Vector2i]([Vector2i(-4, -16), Vector2i(-4, 16), Vector2i(-8, -8), Vector2i(10, 22), Vector2i(-6, 10), Vector2i(9, -8)])
+
+[node name="Cup" type="Sprite2D" parent="SubViewport/Char" node_paths=PackedStringArray("main", "arm")]
+z_index = 3
+material = ExtResource("3_efxa6")
+texture = ExtResource("12_w48qg")
+centered = false
+script = ExtResource("14_2cqfq")
+main = NodePath("../../..")
+arm = NodePath("../Hand")
+hue_shader = ExtResource("12_2cqfq")
+rainbow_shader = ExtResource("3_efxa6")
+
+[node name="Hand" type="Sprite2D" parent="SubViewport/Char"]
+z_index = 3
+material = ExtResource("3_efxa6")
+texture = ExtResource("13_vivmo")
+centered = false
+
+[node name="Render" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_074og")
+texture = SubResource("ViewportTexture_2cqfq")
+centered = false
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_tvwca")
+
+[connection signal="value_changed" from="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer/Spinbox" to="PopupMenu" method="_on_image_scale_changed"]
+[connection signal="value_changed" from="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer2/Spinbox" to="PopupMenu" method="_on_outline_value_changed"]
+[connection signal="toggled" from="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer4/CheckButton" to="PopupMenu" method="_on_rainbow_toggled"]
+[connection signal="value_changed" from="PopupMenu/MarginContainer/VBoxContainer/HBoxContainer5/HSlider" to="PopupMenu" method="_on_cup_hue_changed"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_input"]
