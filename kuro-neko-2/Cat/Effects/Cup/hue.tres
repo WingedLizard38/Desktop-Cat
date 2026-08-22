@@ -1,7 +1,0 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://nhc5c14qs5k"]
-
-[ext_resource type="Shader" uid="uid://bqodkt5hycwd0" path="res://Cat/Effects/Cup/cup_hue_shift.gdshader" id="1_cc8nw"]
-
-[resource]
-shader = ExtResource("1_cc8nw")
-shader_parameter/shift_amount = 1.0
