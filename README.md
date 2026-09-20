@@ -1,6 +1,6 @@
 # Desktop Cat 2.3.1
 
-![alt text](Cat1.gif)
+![alt text](gifs/Cat1.gif)
 
 ## Description
 
@@ -16,7 +16,7 @@ The window containing the application will appear over all items on the screen s
 
 ### Movable
 
-![alt text](Cat_Bounce.gif)
+![alt text](gifs/Cat_Bounce.gif)
 
 Drag the cat around using LMB. Letting go with enough momentum will cause it to continue moving and bounce off the edges of the screen. It will gradually slow down until it reaches a minimum speed and will not stop until the user interacts with it. Should work for all screen sizes and shapes.
 
@@ -30,19 +30,19 @@ Cat has blinking, twitching, eye animations, and steam particles programmed. Whe
 
 ### Menu
 
-![alt text](Cat_Menu.gif)
+![alt text](gifs/Cat_Menu.gif)
 
 Right click to open a menu with the following options. The window will stop moving but can still be dragged.
 
 ### Notes
 
-![alt text](Cat_Notes.gif)
+![alt text](gifs/Cat_Notes.gif)
 
 Write down notes. Position is saved by session and the text is always saved.
 
 ### Dictionary
 
-![alt text](Cat_Dict.gif)
+![alt text](gifs/Cat_Dict.gif)
 
 Another way to write down notes. Each page has a title, tags, and a main body.
 You can add/remove pages and re-order pages.
@@ -52,7 +52,7 @@ Pages are saved.
 
 ### Settings
 
-![alt text](Cat_Options.gif)
+![alt text](gifs/Cat_Options.gif)
 
 Size, outline thickness, and other settings can be edited. Close the application from this page.
 Settings are saved.
