@@ -4,7 +4,7 @@
 
 ## Description
 
-An animated desktop pet in the form of a black cat, with some added funtionality for taking notes. Based on an image I found from [Pinterest](https://mx.pinterest.com/pin/362117626308721718/) that depicts [Luo Xiaohei](ttps://luoxiaohei.fandom.com/wiki/Solar_Terms)(which I only found out after making all the assets).
+An animated desktop pet in the form of a black cat, with some added funtionality for taking notes. Based on an image I found from [Pinterest](https://mx.pinterest.com/pin/362117626308721718/) that depicts [Luo Xiaohei](https://luoxiaohei.fandom.com/wiki/Solar_Terms)(which I only found out after making all the assets).
 
 ## Features
 
