@@ -1,4 +1,5 @@
 # Desktop Cat 2.3.1
+Yes I changed the name, no I can't be bothered to rename the files.
 
 ![alt text](gifs/Cat1.gif)
 
@@ -8,7 +9,7 @@ An animated desktop pet in the form of a black cat, with some added funtionality
 
 ## Features
 
-### Screen Overlay
+# Desktop Cat 2.3.1
 
 This application was programmed such that the window is transparent and only takes up a portion of the screen. Because the window is square and does not allow mouse input to pass through, some transparent areas will still not register mouse imput.
 
